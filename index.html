@@ -9,17 +9,20 @@
 </head>
 
 <body>
-    <h1>Welcome Back</h1>
-    <p>Please Login</p>
+    <div class="container">
+        <h1>Welcome Back</h1>
+        <p>Please Login</p>
 
-    <form>
-        <label for="usernameInput">Username: </label><input type="text" id="usernameInput">
-        <br>
-        <label for="passwordInput">Password: </label><input type="password" id="passwordInput">
-        <p id="message"></p>
-        <br><br>
-        <a href="#" onclick="verifyUser()">Login</a>
-    </form>
+        <form>
+            <label for="usernameInput"></label><input type="text" id="usernameInput" placeholder="Username">
+            <br>
+            <label for="passwordInput"></label><input type="password" id="passwordInput" placeholder="Password">
+            <p id="message"></p>
+            <br><br>
+            <a href="#" onclick="verifyUser()">Login</a>
+            <br><br><br>
+        </form>
+    </div>
 
     <script>
         function verifyUser() {
@@ -33,7 +36,7 @@
             let systemUsername = "Bond";
             let systemPassword = "007";
 
-            if(username == systemUsername && password == systemPassword) {
+            if (username == systemUsername && password == systemPassword) {
                 document.getElementById("message").innerHTML = "Correct. Logging in.";
             } else {
                 document.getElementById("message").innerHTML = "Incorrect, please try again.";

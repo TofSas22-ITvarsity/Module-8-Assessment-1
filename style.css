@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 50px auto 80px;
+    width: 40%;
+
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: none;
+}
+
+.container h1,
+.container p,
+.container form {
+    text-align: center;
+}
+
+.container h1 {
+    margin-top: 30px;
+    font-size: 50px;
+    color: #1a1a1a;
+}
+
+.container p {
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.container form input {
+    display: block;
+    width: 60%;
+    padding: 20px 10px;
+    margin: 10px auto;
+    background-color: #e2dfdf;
+    border: none;
+    border-radius: 10px;
+}
+
+.container form a {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container form a:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
